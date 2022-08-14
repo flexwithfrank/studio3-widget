@@ -1,15 +1,18 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { Container, Stack } from '@mui/system';
-import Button from '@mui/joy/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/joy/IconButton';
-import CheckIcon from '@mui/icons-material/Check';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
+import Button from '@mui/material/Button';
+import ButtonMain from './Button';
+import Backdrop from '@mui/material/Backdrop';
+
+
 
 
 const style = {
@@ -33,8 +36,36 @@ borderRadius: 2
 const BasicModal = () => {
 
 const [open, setOpen] = React.useState(false);
+const [openTwo, setOpenTwo] = React.useState(false);
+const [openThree, setOpenThree] = React.useState(false);
+
+const handleFullClose = () => setOpen(false);
+
+const handlePrevClose = () => {
+  setOpenTwo(false);
+  setOpen(true);
+};
+
+const handlePrevCloseTwo = () => {
+  setOpenTwo(true);
+  setOpenThree(false);
+}
+
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => { 
+    setOpen(false);
+    setOpenTwo(true); 
+  };
+  
+    const handleCloseTwo = () => { 
+      setOpenTwo(false);
+      setOpenThree(true);
+    };
+
+    const handleCloseThree = () => setOpenThree(false);
+
+
+
 //   delay modal for 2 seconds
   useEffect(()=>{
   setTimeout(()=>{
@@ -49,42 +80,117 @@ const [open, setOpen] = React.useState(false);
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description">
+        aria-describedby="modal-modal-description"
+        disableAutoFocus="true" 
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 0,
+        }}>
 
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660417891/strength-1_kwfcdq.png" width="100%" alt="" />
+            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/3_mhzyu1.png" width="100%" alt="" />
+            </Container>
+            <Box p={2}>
+                {/* title */}
+            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
+            <span className='space-font-heavy'> Schedule your first workout </span>
+            </Typography>
+
+            {/*  onboarding message */}
+            <Stack pb={3} alignItems="center" justifyContent="center" direction="row" spacing={2}>
+                <HowToRegIcon sx={{width: 30, height: 30}} />
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    <span className='space-font-light'> Book your first workout using the schedule widget.</span>
+                </Typography>
+            </Stack>
+            
+            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+              <ButtonMain click={handleFullClose} bg="#ffffff" cta="Close" />
+              <ButtonMain click={handleClose} cta="Next" bg="#54545c" clr="#ffffff" />
+            </Stack>
+            </Box>
+        </Box>
+
+        </Modal>
+
+        {/* modal two */}
+
+        <Modal
+        open={openTwo}
+        onClose={handleCloseTwo}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 0,
+        }}>
+
+        <Box sx={style}>
+            <Container disableGutters="true" maxWidth="xl" style={styles}>
+                {/* full width image */}
+            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/2_ola0s0.png" width="100%" alt="" />
+            </Container>
+            <Box p={2}>
+                {/* title */}
+            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
+            <span className='space-font-heavy'> Check your email for details </span>
+            </Typography>
+
+            {/* onboarding message */}
+            <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
+            <MailOutlineIcon sx={{width: 30, height: 30}} />
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+               <span className='space-font-light'>Check your email for details on redeeming your [ 10 - pack ]</span>
+            </Typography>
+            </Stack>
+
+            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+              <ButtonMain click={handlePrevClose} cta="Prev" bg="#ffffff" />
+                <ButtonMain click={handleCloseTwo} cta="Next" bg="#54545c" clr="#ffffff" />
+            </Stack>
+            </Box>
+        </Box>
+
+        </Modal>
+
+        {/* modal 3 */}
+
+         <Modal
+        open={openThree}
+        onClose={handleCloseThree}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 0,
+          }}>
+
+        <Box sx={style}>
+            <Container disableGutters="true" maxWidth="xl" style={styles}>
+                {/* full width image */}
+            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/1_jdyo6g.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
             <Typography mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> Schedule a class to get started! </span>
+            <span className='space-font-heavy'> Download the app </span>
             </Typography>
 
-            {/* direction 1 */}
-            <Stack pb={3} alignItems="center" justifyContent="center" direction="row" spacing={2}>
-                <HowToRegIcon sx={{width: 30, height: 30}} />
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                    <span className='space-font-light'> To get started book your first workout using the schedule widget.</span>
-                </Typography>
-            </Stack>
-
-            {/* direction 2 */}
-
-            <Stack alignItems="center" justifyContent="center" direction="row" spacing={2}>
-
+            {/* onboarding message */}
+            <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
             <MailOutlineIcon sx={{width: 30, height: 30}} />
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               <span className='space-font-light'>Check your email with details about your 10-pack and booking more classes!</span>
+               <span className='space-font-light'>Download Mindbody© booking app to view and change your workouts</span>
             </Typography>
             </Stack>
-            </Box>
-            <Stack justifyContent="flex-end" alignItems="flex-end">
-                <IconButton onClick={handleClose} variant="solid">
-                <CloseIcon />
-                </IconButton>
+
+            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+              <ButtonMain click={handlePrevCloseTwo} cta="Prev" bg="#ffffff" />
+                <ButtonMain click={handleCloseThree} cta="Next" bg="#54545c" clr="#ffffff" />
             </Stack>
+            </Box>
         </Box>
 
         </Modal>
