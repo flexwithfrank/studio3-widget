@@ -4,13 +4,11 @@ import { Container, Stack } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
-import CloseIcon from '@mui/icons-material/Close';
-import IconButton from '@mui/joy/IconButton';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
-import Button from '@mui/material/Button';
 import ButtonMain from './Button';
 import Backdrop from '@mui/material/Backdrop';
+import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 
 
 
@@ -180,7 +178,7 @@ const handlePrevCloseTwo = () => {
 
             {/* onboarding message */}
             <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
-            <MailOutlineIcon sx={{width: 30, height: 30}} />
+            <MobileFriendlyIcon sx={{width: 30, height: 30}} />
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                <span className='space-font-light'>Download Mindbody© booking app to view and change your workouts</span>
             </Typography>
@@ -188,7 +186,7 @@ const handlePrevCloseTwo = () => {
 
             <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
               <ButtonMain click={handlePrevCloseTwo} cta="Prev" bg="#ffffff" />
-                <ButtonMain click={handleCloseThree} cta="Next" bg="#54545c" clr="#ffffff" />
+                <ButtonMain click={handleCloseThree} cta="Close" bg="#54545c" clr="#ffffff" />
             </Stack>
             </Box>
         </Box>
