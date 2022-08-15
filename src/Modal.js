@@ -6,6 +6,8 @@ import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
 import ButtonMain from './Button';
 import Backdrop from '@mui/material/Backdrop';
+import Slide from '@mui/material/Slide';
+
 
 
 
@@ -67,7 +69,7 @@ const handlePrevCloseTwo = () => {
 
   return (
     <div>
-
+        
         <Modal
         open={open}
         onClose={handleClose}
@@ -78,7 +80,7 @@ const handlePrevCloseTwo = () => {
         BackdropProps={{
           timeout: 0,
         }}>
-
+            
         <Box sx={style}>
             <div style={styles}>
                 {/* full width image */}
@@ -103,8 +105,8 @@ const handlePrevCloseTwo = () => {
             </Stack>
             </Box>
         </Box>
-
         </Modal>
+        
 
         {/* modal two */}
 
