@@ -4,6 +4,7 @@ import { Container, Box, Typography, Stack, Link } from '@mui/material';
 import BasicModal from './Modal';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import Footer from './Footer';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="0f179021470c" data-widget-version="1" >
         </healcode-widget>
         </div>
+        <Footer />
     </Container>
 
   );
