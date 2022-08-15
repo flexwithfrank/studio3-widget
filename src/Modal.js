@@ -4,11 +4,8 @@ import { Container, Stack } from '@mui/system';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
 import ButtonMain from './Button';
 import Backdrop from '@mui/material/Backdrop';
-import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 
 
 
