@@ -21,14 +21,11 @@ const style = {
   width: 400,
   bgcolor: 'background.paper',
   boxShadow: 24,
-  borderRadius: 2
+  borderRadius: 3
 };
 
 const styles = {
-position: "relative",
-overflow: "hidden",
-borderRadius: 2
-
+borderRadius: 5
 }
 
 const BasicModal = () => {
@@ -86,22 +83,20 @@ const handlePrevCloseTwo = () => {
         }}>
 
         <Box sx={style}>
-            <Container disableGutters="true" maxWidth="xl" style={styles}>
+            <div style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/3_mhzyu1.png" width="100%" alt="" />
-            </Container>
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/3_mhzyu1.png" width="100%" alt="" />
+            </div>
             <Box p={2}>
                 {/* title */}
-            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'><span style={{backgroundColor: "#54545c", color: "white", padding: "4px 12px", borderRadius: 50}}>1 
-            </span>&nbsp; Schedule your first workout </span>
+            <Typography align="center" id="modal-modal-title" variant="h5" component="h2">
+            <span className='space-font-heavy'>Schedule your first workout </span>
             </Typography>
 
             {/*  onboarding message */}
             <Stack pb={3} alignItems="center" justifyContent="center" direction="row" spacing={2}>
-                <HowToRegIcon sx={{width: 30, height: 30}} />
-                <Typography align="left" id="modal-modal-description" sx={{ mt: 2 }}>
-                    <span className='space-font-light'> Book your first workout using the schedule widget.</span>
+                <Typography px={1} align="center" id="modal-modal-description" sx={{ mt: 2 }}>
+                    <span className='space-font-light'> Book your first workout using this schedule widget. Login or create an account to get started</span>
                 </Typography>
             </Stack>
             
@@ -130,19 +125,18 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/2_ola0s0.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/2_ola0s0.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
-            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'><span style={{backgroundColor: "#54545c", color: "white", padding: "4px 11px", borderRadius: 50}}>2</span>&nbsp; Check your email for details </span>
+            <Typography align="center" id="modal-modal-title" variant="h5" component="h2">
+            <span className='space-font-heavy'>Check your email for details</span>
             </Typography>
 
             {/* onboarding message */}
             <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
-            <MailOutlineIcon sx={{width: 30, height: 30}} />
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               <span className='space-font-light'>Check your email for details on redeeming your [ 10 - pack ]</span>
+            <Typography px={1} align="center" id="modal-modal-description" sx={{ mt: 2 }}>
+               <span className='space-font-light'>Check your email for details on claiming your [10 - pack]. Hurry because there are only a few available!</span>
             </Typography>
             </Stack>
 
@@ -171,19 +165,18 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: 2}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/1_jdyo6g.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/1_jdyo6g.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
-            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> <span style={{backgroundColor: "#54545c", color: "white", padding: "4px 11px", borderRadius: 50}}>3</span>&nbsp; Download the mobile app </span>
+            <Typography align="center" id="modal-modal-title" variant="h5" component="h2">
+            <span className='space-font-heavy'>Get the mobile app </span>
             </Typography>
 
             {/* onboarding message */}
             <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
-            <MobileFriendlyIcon sx={{width: 30, height: 30}} />
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               <span className='space-font-light'>Download the Mindbody© booking app to view and change your workouts</span>
+            <Typography px={1} align="center" id="modal-modal-description" sx={{ mt: 2 }}>
+               <span className='space-font-light'>Download the Mindbody© booking app to view, change, and track all your exciting workouts!</span>
             </Typography>
             </Stack>
 
