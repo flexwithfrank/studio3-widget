@@ -93,13 +93,14 @@ const handlePrevCloseTwo = () => {
             <Box p={2}>
                 {/* title */}
             <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> Schedule your first workout </span>
+            <span className='space-font-heavy'><span style={{backgroundColor: "#54545c", color: "white", padding: "4px 12px", borderRadius: 50}}>1 
+            </span>&nbsp; Schedule your first workout </span>
             </Typography>
 
             {/*  onboarding message */}
             <Stack pb={3} alignItems="center" justifyContent="center" direction="row" spacing={2}>
                 <HowToRegIcon sx={{width: 30, height: 30}} />
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <Typography align="left" id="modal-modal-description" sx={{ mt: 2 }}>
                     <span className='space-font-light'> Book your first workout using the schedule widget.</span>
                 </Typography>
             </Stack>
@@ -120,6 +121,7 @@ const handlePrevCloseTwo = () => {
         onClose={handleCloseTwo}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        disableAutoFocus="true"
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 0,
@@ -133,7 +135,7 @@ const handlePrevCloseTwo = () => {
             <Box p={2}>
                 {/* title */}
             <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> Check your email for details </span>
+            <span className='space-font-heavy'><span style={{backgroundColor: "#54545c", color: "white", padding: "4px 11px", borderRadius: 50}}>2</span>&nbsp; Check your email for details </span>
             </Typography>
 
             {/* onboarding message */}
@@ -160,6 +162,7 @@ const handlePrevCloseTwo = () => {
         onClose={handleCloseThree}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        disableAutoFocus="true"
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 0,
@@ -172,15 +175,15 @@ const handlePrevCloseTwo = () => {
             </Container>
             <Box p={2}>
                 {/* title */}
-            <Typography mb={2} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> Download the app </span>
+            <Typography align="left" mb={2} id="modal-modal-title" variant="h6" component="h2">
+            <span className='space-font-heavy'> <span style={{backgroundColor: "#54545c", color: "white", padding: "4px 11px", borderRadius: 50}}>3</span>&nbsp; Download the mobile app </span>
             </Typography>
 
             {/* onboarding message */}
             <Stack pb={3}  alignItems="center" justifyContent="center" direction="row" spacing={2}>
             <MobileFriendlyIcon sx={{width: 30, height: 30}} />
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-               <span className='space-font-light'>Download Mindbody© booking app to view and change your workouts</span>
+               <span className='space-font-light'>Download the Mindbody© booking app to view and change your workouts</span>
             </Typography>
             </Stack>
 
