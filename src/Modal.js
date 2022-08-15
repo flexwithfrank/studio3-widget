@@ -6,10 +6,6 @@ import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
 import ButtonMain from './Button';
 import Backdrop from '@mui/material/Backdrop';
-import Slide from '@mui/material/Slide';
-
-
-
 
 
 const style = {
@@ -20,7 +16,8 @@ const style = {
   width: 400,
   bgcolor: 'background.paper',
   boxShadow: 24,
-  borderRadius: 3
+  borderRadius: 3,
+  transition: "5s ease-in-out"
 };
 
 const styles = {
@@ -84,7 +81,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <div style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/3_mhzyu1.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541084/1_uxhi8p.png" width="100%" alt="" />
             </div>
             <Box p={2}>
                 {/* title */}
@@ -124,7 +121,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/2_ola0s0.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541087/2_eljncz.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
@@ -164,7 +161,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660507935/1_jdyo6g.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541086/3_e7asn1.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
