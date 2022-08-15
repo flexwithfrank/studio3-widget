@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import { useEffect } from 'react';
 import ButtonMain from './Button';
 import Backdrop from '@mui/material/Backdrop';
+import { Grid } from '@mui/material';
 
 
 const style = {
@@ -95,11 +96,20 @@ const handlePrevCloseTwo = () => {
                     <span className='space-font-light'> Book your first workout using this schedule widget. Login or create an account to get started</span>
                 </Typography>
             </Stack>
-            
-            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+
+            {/* button group left/right */}
+            <Grid container>
+
+            <Grid xs={6} item direction="row" justifyContent="flex-start" alignItems="center">
               <ButtonMain click={handleFullClose} bg="#ffffff" cta="Close" />
+            </Grid>
+            
+            <Grid xs={6} item container  direction="row" justifyContent="flex-end" alignItems="center">
               <ButtonMain click={handleClose} cta="Next" bg="#54545c" clr="#ffffff" />
-            </Stack>
+            </Grid>
+
+            </Grid>
+
             </Box>
         </Box>
         </Modal>
@@ -136,10 +146,19 @@ const handlePrevCloseTwo = () => {
             </Typography>
             </Stack>
 
-            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+            {/* button group left/right */}
+
+            <Grid container>
+
+            <Grid xs={6} item direction="row" justifyContent="flex-start" alignItems="center">
               <ButtonMain click={handlePrevClose} cta="Prev" bg="#ffffff" />
-                <ButtonMain click={handleCloseTwo} cta="Next" bg="#54545c" clr="#ffffff" />
-            </Stack>
+            </Grid>
+            
+            <Grid xs={6} item container  direction="row" justifyContent="flex-end" alignItems="center">
+              <ButtonMain click={handleCloseTwo} cta="Next" bg="#54545c" clr="#ffffff" />
+            </Grid>
+
+            </Grid>
             </Box>
         </Box>
 
@@ -176,10 +195,19 @@ const handlePrevCloseTwo = () => {
             </Typography>
             </Stack>
 
-            <Stack direction="row" spacing={1} justifyContent="flex-end" alignItems="flex-end">
+            {/* button group left/right */}
+
+            <Grid container>
+
+            <Grid xs={6} item direction="row" justifyContent="flex-start" alignItems="center">
               <ButtonMain click={handlePrevCloseTwo} cta="Prev" bg="#ffffff" />
-                <ButtonMain click={handleCloseThree} cta="Close" bg="#54545c" clr="#ffffff" />
-            </Stack>
+            </Grid>
+            
+            <Grid xs={6} item container  direction="row" justifyContent="flex-end" alignItems="center">
+              <ButtonMain click={handleCloseThree} cta="Close" bg="#54545c" clr="#ffffff" />
+            </Grid>
+            </Grid>
+
             </Box>
         </Box>
 
