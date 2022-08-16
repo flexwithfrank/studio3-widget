@@ -20,7 +20,7 @@ const css = `
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 16px 24px;
+  padding: 16px 40px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -49,7 +49,7 @@ const ButtonV2 = ({ cta }) => {
   return (
     <div>
         <style type="text/css">{css}</style>
-            <Link m={2} className='button-27'><div className='link'><healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="30089" data-mb-site-id="686934" data-bw-identity-site="false" data-type="pricing-link" data-inner-html="Purchase now" data-service-id="101165" /></div></Link>
+            <Link m={2} className='button-27'><div className='links'><healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="30089" data-mb-site-id="686934" data-bw-identity-site="false" data-type="pricing-link" data-inner-html="Purchase now" data-service-id="101165" /></div></Link>
     </div>
   );
 }

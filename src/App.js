@@ -21,7 +21,7 @@ function App() {
 
         <Stack direction="row" justifyContent="center" alignItems="center">
           <Typography lineHeight="24px" align='center' color="#ffffff" p={3} id="modal-modal-title" variant="h6" component="h2">
-            <span className='space-font-heavy'> Studio3 Fitness is Seattle's premier boutiqe fitness studio. Don't miss out on our 10 pack special &nbsp; 
+            <span className='space-font-heavy'> Studio3 Fitness is Seattle's premier boutiqe fitness studio. Don't miss out on our 10 pack special&nbsp; 
             <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="30089" data-mb-site-id="686934" data-bw-identity-site="false" data-type="pricing-link" data-inner-html="here." data-service-id="101165" />
            &nbsp;Offer exp 8.19 🎉 </span> 
           </Typography>
