@@ -6,7 +6,7 @@ const css = `
 .button-27 {
   appearance: none;
   background-color: #000000;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #000000;
   border-radius: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -45,7 +45,7 @@ const css = `
   transform: translateY(0);
 }`
 
-const ButtonV2 = ({ cta }) => {
+const ButtonV2 = () => {
   return (
     <div>
         <style type="text/css">{css}</style>
