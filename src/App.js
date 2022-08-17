@@ -7,6 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import ButtonV2 from './ButtonV2';
+import { useEffect } from 'react';
 
 
 
@@ -34,7 +35,8 @@ function App() {
         </Stack>
 
       </Container>
-        <BasicModal />
+   
+      <BasicModal />
       
       <div style={{backgroundColor: "#000000"}}>
         <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="0f179021470c" data-widget-version="1" >

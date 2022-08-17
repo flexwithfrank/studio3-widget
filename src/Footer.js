@@ -4,6 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { Link as LinkRoute } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -21,11 +22,13 @@ const Footer = () => {
         </Grid>
 
         <Grid justifyContent={{ xs: "center", sm: "flex-end"}} xs={12} sm={6} container item>
-        <Stack direction={"row"} spacing={1}>
+        <Stack justifyContent="center" alignItems="center" direction={"row"} spacing={2}>
+            <LinkRoute className='space-font-light' sx={{color: "white"}} to="/PrivacyPolicy"><p>Privacy Policy</p></LinkRoute>
             <Link href="https://www.instagram.com/studio3.fit/"><InstagramIcon sx={{color: "#ffffff"}} /></Link>
             <Link href="https://www.facebook.com/studio3LQA/"><FacebookIcon sx={{color: "#ffffff"}} /></Link>
             <Link href="https://twitter.com/Studio3fit"><TwitterIcon sx={{color: "#ffffff"}} /></Link>
             <Link href="mailto:hi@eatblended.com"><EmailIcon sx={{color: "#ffffff"}} /></Link>
+            
         </Stack>
         </Grid>
 

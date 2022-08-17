@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Stack, Box, Typography, Modal, Backdrop } from '@mui/material';
 import ButtonV2 from './ButtonV2';
-import PurchaseWidget from './PurchaseWidget';
+import { useEffect } from 'react';
 
 const style = {
   position: 'absolute',
@@ -18,7 +18,6 @@ const style = {
 
 
 const PurchaseLanding = () => {
-
 
     const [show, setShow] = React.useState(true);
     const handleClose = () => setShow(false);
@@ -58,8 +57,7 @@ const PurchaseLanding = () => {
             {/* button group left/right */}
             
             <Stack direction="row" justifyContent="center" alignItems="center">
-              
-             
+                <ButtonV2 />
             </Stack>
 
             </Box>

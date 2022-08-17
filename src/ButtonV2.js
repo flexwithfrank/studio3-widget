@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from '@mui/material';
+import { useState, useEffect } from 'react';
+import {Helmet} from "react-helmet";
+
 
 const css = `
 
@@ -45,10 +48,25 @@ const css = `
   transform: translateY(0);
 }`
 
+
+
 const ButtonV2 = () => {
+
+    useEffect(() => {
+  const script = document.createElement('script');
+  script.src = "https://widgets.mindbodyonline.com/javascripts/healcode.js";
+  script.async = true;
+  document.body.appendChild(script);
+return () => {
+    document.body.removeChild(script);
+  }
+}, []);
+
   return (
     <div>
         <style type="text/css">{css}</style>
+        <Helmet><script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript" async /></Helmet>
+       
             <Link m={2} className='button-27'><div className='links'><healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link" data-site-id="30089" data-mb-site-id="686934" data-bw-identity-site="false" data-type="pricing-link" data-inner-html="Purchase now" data-service-id="101165" /></div></Link>
     </div>
   );
