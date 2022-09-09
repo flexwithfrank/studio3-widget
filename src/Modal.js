@@ -82,7 +82,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <div style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541084/1_uxhi8p.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://storage.googleapis.com/msgsndr/M4LpH9VZkgr3fIOnQTtk/media/631bc18005c40c371deb9694.png" width="100%" alt="" />
             </div>
             <Box p={2}>
                 {/* title */}
@@ -131,7 +131,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541087/2_eljncz.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://storage.googleapis.com/msgsndr/M4LpH9VZkgr3fIOnQTtk/media/631bc18005c40cf7cfeb9692.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
@@ -180,7 +180,7 @@ const handlePrevCloseTwo = () => {
         <Box sx={style}>
             <Container disableGutters="true" maxWidth="xl" style={styles}>
                 {/* full width image */}
-            <img style={{borderRadius: "10px 10px 0 0"}} src="https://res.cloudinary.com/djjb1vyjm/image/upload/v1660541086/3_e7asn1.png" width="100%" alt="" />
+            <img style={{borderRadius: "10px 10px 0 0"}} src="https://storage.googleapis.com/msgsndr/M4LpH9VZkgr3fIOnQTtk/media/631bc18005c40cbe48eb9693.png" width="100%" alt="" />
             </Container>
             <Box p={2}>
                 {/* title */}
