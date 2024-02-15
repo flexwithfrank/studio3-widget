@@ -9,17 +9,16 @@ import Modal2 from './Modal2';
 
 
 
-
 function App() {
   
   const [show, setShow] = React.useState(true);
   const handleClick = () => setShow(false);
+  
 
   return (
 
     <Container disableGutters="true" maxWidth="xl" className='container-height'>
       <Modal2 />
-      <Nav />
       <Container style={{display: show ? "" : "none"}} maxWidth="xl" disableGutters="true" className="gradient">
 
         {/* <Stack py={2} direction={{xs:"column", sm: "row"}} justifyContent="center" alignItems="center">
