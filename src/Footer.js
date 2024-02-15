@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Container, Stack, Box, Grid, Link} from '@mui/material';
+import { Typography, Container, Stack, Grid, Link} from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
@@ -16,7 +16,7 @@ const Footer = () => {
         <Stack py={{ xs: 3, sm: 0}} justifyContent={{ xs: "center", sm: "flex-start"}} direction="row">
 
             <Typography sx={{ lineHeight: { xs: "24px" }}} color='#fff' fontSize={{ xs: 14 }}>
-                            <span className='space-font-light'>© 2022 Studio3 Fitness. All rights reserved.</span>
+                            <span className='space-font-light'>© 2024 Studio3 Fitness. All rights reserved.</span>
             </Typography>    
         </Stack>
         </Grid>

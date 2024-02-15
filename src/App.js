@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Footer from './Footer';
 import Nav from './Nav';
+import Modal2 from './Modal2';
 
 
 
@@ -17,6 +18,7 @@ function App() {
   return (
 
     <Container disableGutters="true" maxWidth="xl" className='container-height'>
+      <Modal2 />
       <Nav />
       <Container style={{display: show ? "" : "none"}} maxWidth="xl" disableGutters="true" className="gradient">
 
