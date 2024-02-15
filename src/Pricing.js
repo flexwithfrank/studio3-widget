@@ -109,11 +109,11 @@ const Pricing = () => {
                 ></script>
                 <healcode-widget
                   style={{
-                    backgroundColor: "#000",
+                    backgroundColor: "#deff00",
                     justifyContent: "center",
                     padding: "15px 80px",
                     borderRadius: "5px",
-                    color: "#FFF",
+                    color: "#333 !important",
                     fontSize: "20px",
                     fontWeight: "bold",
                     cursor: "pointer",
